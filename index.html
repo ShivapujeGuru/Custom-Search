@@ -41,12 +41,12 @@
         <div class="ui stackable center aligned grid container">
             <div class="row">
                 <div class="thirteen wide column">
-                    <div class="ui segment">
+                    <div class="ui">
                         <h2>The Modern Search Engine</h2>
                         <p><i>How it's done now. Search your unique thoghts.</i></p>
                         <div class="ui category">
                             <div class="ui icon input">
-                                <input class="prompt" type="text" placeholder="Search queries">
+                                <input class="prompt" type="text" placeholder="Search queries . . .">
                                 <i class="large violet search icon"></i>
                             </div>
                             <div class="results"></div>
@@ -108,8 +108,28 @@
     </div>
 
 
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+            $(function () {
+                $('#test').click(function () {
+                    $('.test').modal('show');
+                });
+        
+                $('#test2').click(function () {
+                    $('.test').modal('show');
+                });
+                $('.ui.menu a.item').on('click', function () {
+                    $(this)
+                        .addClass('active')
+                        .siblings()
+                        .removeClass('active');
+                })
+            });
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </body>
 

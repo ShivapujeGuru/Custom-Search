@@ -1,5 +1,4 @@
 body {
-  background-color: #b1adc33b !important;
   width: 100% !important;
   font-family: 'Courier New', Courier, monospace; }
 
@@ -32,11 +31,7 @@ body {
 .main-sec {
   width: 100%;
   height: 70vh;
-  transform: translateY(20%); }
-  .main-sec .segment {
-    padding: 40px 0 !important;
-    box-shadow: none !important;
-    border: none !important; }
+  transform: translateY(16%); }
   .main-sec h2 {
     margin-top: 10px !important;
     min-height: 30px !important;
@@ -50,10 +45,14 @@ body {
     .main-sec .category input {
       border: none !important;
       border-bottom: 1.2px solid rgba(64, 19, 122, 0.9) !important;
-      border-radius: 2px !important;
-      padding: 16px 10px !important; }
+      border-radius: 6px !important;
+      padding: 16px 10px !important;
+      background-color: transparent; }
       .main-sec .category input:focus {
         border-color: #330a69 !important; }
+      .main-sec .category input::placeholder {
+        font-size: 16px;
+        font-weight: lighter; }
 
 footer {
   background-color: #1f023eeb;
